@@ -1,0 +1,15 @@
+<header>
+  <div class="wrapper">
+    <h1>Hello ITOP 1000</h1>
+    <div class="echange-info" *ngIf="items">
+      <div class="currency">
+        <span class="bold">{{ items[31].cc | uppercase }}</span>
+        <span>{{ items[31].rate | currency : "EUR" }}</span>
+      </div>
+      <div class="currency">
+        <span class="bold">{{ items[24].cc | uppercase }}</span>
+        <span>{{ items[24].rate | currency }}</span>
+      </div>
+    </div>
+  </div>
+</header>

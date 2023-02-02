@@ -1,0 +1,18 @@
+// Color
+$c-white: #ffff;
+$c-black: #000000;
+$c-light-grey: #6c6c6c;
+$c-red: #ac1313;
+$c-silver: #f5f5f5;
+
+// Font size
+$fs-base: 14;
+
+// Font familly
+$ff-base: "Libre Franklin", sans-serif;
+
+// * Bezier
+$b-normal: cubic-bezier(0.4, 0, 0.2, 1);
+
+// * Transition
+$t-normal: 0.35s $b-normal;

@@ -1,0 +1,54 @@
+@import "./mixins.scss";
+@import "./variables.scss";
+@import "./fonts.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: $ff-base;
+  font-size: $fs-base + px;
+  color: $c-black;
+  background-color: $c-silver;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}

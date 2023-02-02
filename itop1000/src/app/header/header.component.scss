@@ -1,0 +1,38 @@
+@import "../../styles/variables";
+@import "../../styles/mixins.scss";
+
+header {
+  background-color: $c-white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.echange-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.bold {
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.currency {
+  border-bottom: 1px solid $c-red;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

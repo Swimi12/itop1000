@@ -1,0 +1,65 @@
+<section *ngIf="items">
+  <div class="wrapper">
+    <h2>Converter</h2>
+    <div class="block">
+      <label>
+        <input
+          type="number"
+          placeholder="Enter value"
+          [(ngModel)]="firstValue"
+          (input)="
+            firstInputConvert(
+              firstValue!,
+              selectedCurrencyFirst,
+              selectedCurrencySecond
+            )
+          "
+        />
+        <select
+          class="custom-select"
+          (change)="
+            firstInputConvert(
+              firstValue!,
+              selectedCurrencyFirst,
+              selectedCurrencySecond
+            )
+          "
+          [(ngModel)]="selectedCurrencyFirst"
+        >
+          <option>UAH</option>
+          <option>EUR</option>
+          <option>USD</option>
+        </select>
+      </label>
+      <label>
+        <input
+          type="number"
+          placeholder="Enter value"
+          [(ngModel)]="secondValue"
+          (input)="
+            secondInputConvert(
+              secondValue!,
+              selectedCurrencyFirst,
+              selectedCurrencySecond
+            )
+          "
+        />
+        <select
+          class="custom-select"
+          (change)="
+            secondInputConvert(
+              secondValue!,
+              selectedCurrencyFirst,
+              selectedCurrencySecond
+            )
+          "
+          [(ngModel)]="selectedCurrencySecond"
+        >
+          <option>EUR</option>
+          <option>USD</option>
+          <option>UAH</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</section>
