@@ -1,8 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EchangeRatesService } from '../services/echange-rates.service';
 import { IEchangeResponse } from '../types/exhangeResponse.types';
-import { ConverterComponent } from '../converter/converter.component';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +10,7 @@ import { ConverterComponent } from '../converter/converter.component';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   items: IEchangeResponse[] | undefined;
 
   constructor(private echangeRatesService: EchangeRatesService) {}

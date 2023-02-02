@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IEchangeResponse } from '../types/exhangeResponse.types';
@@ -10,9 +10,8 @@ import { EchangeRatesService } from '../services/echange-rates.service';
   imports: [CommonModule, FormsModule],
   templateUrl: './converter.component.html',
   styleUrls: ['./converter.component.scss'],
-  providers: [],
 })
-export class ConverterComponent {
+export class ConverterComponent implements OnInit {
   firstValue: number | undefined;
   secondValue: number | undefined;
   selectedCurrencyFirst: string = 'UAH';
